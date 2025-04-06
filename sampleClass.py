@@ -9,6 +9,7 @@ class partyAnimal:
 
 an = partyAnimal()
 
-an.party()
-an.party()
-an.party()
+print("Type", type(an))
+print("Dir ",dir(an))
+print("Type", type(an.x))
+print ("Type", type(an.party))
