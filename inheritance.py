@@ -16,9 +16,17 @@ class FootballFan(PartyAnimal):
         self.points = 0
 
     def touchdown(self):
-        self.points = self.points + 7
+        self.points = self.points + 6
         self.party()
-        print(self.name,"points",self.points)
+        print(self.name,"TOUCHDOWN! Points:",self.points)
+
+    def extrapoint(self):
+        self.points = self.points + 1
+        print(self.name,"EXTRA POINT IS GOOD! Points:",self.points)
+
+    def twopointconversion(self):
+        self.points = self.points + 2
+        print(self.name,"TWO POINT CONVERSION IS GOOD! Points:",self.points)
 
 s = PartyAnimal("Sally")
 s.party()
@@ -26,3 +34,7 @@ s.party()
 j = FootballFan("Jim")
 j.party()
 j.touchdown()
+j.extrapoint()
+
+j.touchdown()
+j.twopointconversion()
