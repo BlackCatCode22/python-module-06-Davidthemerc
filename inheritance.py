@@ -45,6 +45,8 @@ class FootballTeam(FootballFan):
 
     def intercepted(self):
         print(self.name,"threw an INTERCEPTION! Turnover!")
+        self.x = self.x - 2
+        print(self.name,"- Two party members stopped watching the game! New Party Count:",self.x)
 
 s = PartyAnimal("Sally's Team")
 s.party()
@@ -58,6 +60,9 @@ j.touchdown()
 j.twopointconversion()
 
 b = FootballTeam("Caleb's Team")
+b.party()
+b.party()
+b.party()
 b.party()
 b.party()
 b.party()
